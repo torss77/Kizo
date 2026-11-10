@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: kizo-vpn-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: PORT
+        value: 10000
+        
